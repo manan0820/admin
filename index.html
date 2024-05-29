@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>even-odd</title>
+    <script type="text/javascript">
+        function check(){
+            a=parseInt(document.getElementById("one").value);
+            if(a%2==0)
+            document.getElementById("out").value="Number is even";
+        else
+        document.getElementById("out").value="Number is odd";
+
+        }
+    </script>
+    <style>
+        
+        body{
+            text-align: center;
+            background-color: aqua;
+            margin-left:450px;
+            margin-top: 100px;
+
+        }
+        fieldset{
+            width: 350px;
+
+        }
+    </style>
+</head>
+<body>
+    <form name="myname"><fieldset>
+        <table>
+            <tr>
+                <td><label>Enter First Number: </label></td>
+                <td><input type="text" id="one"></td>
+            </tr>
+            <tr>
+                <td><label>Result: </label></td>
+                <td><input type="text" id="out"></td>
+            </tr>
+            
+        </table>
+       
+        <input type="button" id="res" value="check" onclick="check()" >
+    </fieldset>
+    </form>
+</body>
+</html>
