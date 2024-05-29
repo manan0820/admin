@@ -3,49 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>even-odd</title>
-    <script type="text/javascript">
-        function check(){
-            a=parseInt(document.getElementById("one").value);
-            if(a%2==0)
-            document.getElementById("out").value="Number is even";
-        else
-        document.getElementById("out").value="Number is odd";
-
-        }
-    </script>
+    <title>Resume</title>
     <style>
-        
-        body{
-       
-            background-color: aqua;
-            margin-left:450px;
-            margin-top: 100px;
-
+        h1,h2,h3 {
+            color: rgb(216, 51, 22);
         }
-        fieldset{
-            width: 350px;
+        body {
+            background-color: lightgray;
+        }
+        a:hover {
+            color: rgb(35, 202, 180);
+            text-decoration: dotted;
+        }
 
+        @media (max-width: 600px) {
+            h2, h3 {
+                text-align: center;
+            }
+            ul, ol {
+                padding-left: 0;
+            }
+            li {
+                margin-left: 10px;
+                text-transform: capitalize;
+            }
         }
     </style>
 </head>
-<body><h2>Check the number is odd or even</h2>
-    <form name="myname"><fieldset>
-        <table>
-            <tr>
-                <td><label>Enter  Number: </label></td>
-                <td><input type="text" id="one"></td>
-            </tr>
-            <tr>
-                <td><label>Result: </label></td>
-                <td><input type="text" id="out"></td>
-            </tr>
-            
-        </table>
-       
-        <input type="button" id="res" value="check" onclick="check()" >
-    </fieldset>
-    </form>
-   <h2>Go to: <a href="report-card.html">report-card</a></h2>
+<body>
+    <h2>Manan Sharma</h2>
+    <h3>V.P.O Jamsher Khas, Dist. Jalandhar, Punjab, 144020</h3>
+    <h3>Ph. No. 8427840820, 6284376765  Email- manansharma9257@gmail.com</h3>
+    <h2 style="text-decoration: underline;">Summary of qualifications</h2>
+    <ul>
+        <li>A graduate equipped with proficient knowledge in various computer languages and tools with a consistent engagement in the field. Graduate in bachelor of science in computer applications proficient in following languages and willingness to learn and adapt to new technologies.</li>            
+        <li>HTML</li>               
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+    <h2 style="text-decoration: underline;">Education:</h2>
+    <ul>
+        <li>B.Sc CAS from D.A.V college Hoshiarpur with 75% marks.</li>
+    </ul>
+    <h2 style="text-decoration: underline;">Computer tools</h2>
+    <ul>
+        <li>MS Excel</li>
+        <li>MS Word</li>
+        <li>MS PowerPoint</li>
+    </ul>
+    <h2 style="text-decoration: underline;">Projects:</h2>
+    <ol>
+        <li>An example Registration page for your Website: <a href="registration.html">Click Me </a> </li>
+    </ol>
 </body>
 </html>
