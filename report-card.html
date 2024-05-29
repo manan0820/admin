@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report card</title>
+    <script type="text/javascript">
+      function  check()
+      {
+       a=Number(document.myform.i.value);
+       b=Number(document.myform.ii.value);
+       document.myform.result1.value=a+b;
+       c=Number(document.myform.x.value);
+       d=Number(document.myform.y.value);
+       document.myform.result2.value=c+d;
+       e=Number(document.myform.a.value);
+       f=Number(document.myform.b.value);
+       document.myform.result3.value=e+f;
+       g=Number(document.myform.c.value);
+       h=Number(document.myform.d.value);
+       document.myform.result4.value=g+h;
+       i=Number(document.myform.e.value);
+       j=Number(document.myform.f.value);
+       document.myform.result5.value=i+j;
+       aa=Number(document.myform.result1.value);
+       bb=Number(document.myform.result2.value);
+       cc=Number(document.myform.result3.value);
+       dd=Number(document.myform.result4.value);
+       ee=Number(document.myform.result5.value);
+       document.myform.marks.value=aa+bb+cc+dd+ee;
+       document.myform.per.value=(((aa+bb+cc+dd+ee)/500)*100 );
+ }
+
+    </script>
+    <style>
+        body{ background-color: powderblue;
+                margin:0 320px;
+        }
+        fieldset{
+            padding: 0%;
+        }
+        input{
+            padding: 0 auto;
+            margin: 5px 10px;
+        }
+        .button{
+            padding:5px;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <form name="myform">
+    <h3 style="text-align: center;"> Report Card</h3>
+<fieldset> <table>
+        <tr>
+            <td><label for="roll">Roll no. : </label></td>
+            <td><input type="text" name="roll" id="roll"></td>
+        </tr>
+        <tr>
+            <td><label for="name">Name: </label></td>
+            <td><input type="text" name="name" id="name"></td>
+        </tr>
+        <tr> 
+            <td>
+                <label for="age" >Age: </label> 
+            </td>
+            <td> <input type="text" name="age" id="age"></td>
+        </tr>
+  
+
+    </table></fieldset>
+    <table>
+        <tr>
+            <th><label >Subject</label></th>
+            <th><label >Internal(25)</label></th>
+            <th><label>External(75)</label></th>
+            <th><label>Total</label></th>
+            
+        </tr>
+        <tr>
+            <td><label >C :</label></td>
+            <td><input type="text" id="i" ></td>
+            <td><input type="text" id="ii"></td>
+            <td><input type="text" class="one" id="result1" ></td>
+        </tr>
+        <tr>
+            <td><label >Java :</label></td>
+            <td><input type="text" id="x" ></td>
+            <td><input type="text" id="y"></td>
+            <td><input type="text" class="two" id="result2" ></td>
+        </tr>
+        <tr>
+            <td><label >PHP :</label></td>
+            <td><input type="text" id="a" ></td>
+            <td><input type="text" id="b"></td>
+            <td><input type="text" class="three" id="result3"></td>
+        </tr>
+        <tr>
+            <td><label >MYSQL :</label></td>
+            <td><input type="text" id="c" ></td>
+            <td><input type="text" id="d" ></td>
+            <td><input type="text" class="four" id="result4" ></td>
+        </tr>
+        <tr>
+            <td><label >HTML :</label></td>
+            <td><input type="text" id="e" ></td>
+            <td><input type="text" id="f"></td>
+            <td><input type="text" class="five" id="result5"></td>
+        </tr> </table>
+        
+        
+    <label for="marks">Total marks: </label>
+            <input type="text" id="marks">
+        
+                <label >Percentage: </label>
+               <input type="text" id="per"><br>
+
+               <input type="button" value="calculate" class="button" onclick="check()">
+            </form>
+</body>
+</html>
