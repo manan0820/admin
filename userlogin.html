@@ -5,49 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User login</title>
     <style>
-       
-       fieldset {
+        fieldset {
             background-color: rgba(255, 255, 255, 0.5);
             border: none;
             margin: 20px auto;
             padding: 20px;
             max-width: 500px;
         }
-            
-        
-            
-        body{
-        background-image: url("images/bridge.jpg") ;
-    
+
+        body {
+            /* Default background image */
+            background-image: url("images/bridge.jpg");
             background-repeat: no-repeat;
             background-size: cover;
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
         }
-            
-        
+
+        @media only screen and (max-width: 600px) {
+            body {
+                /* Wallpaper for small screens */
+                background-image: url("images/userlogin1.jpeg");
+            }
+
+            fieldset {
+                max-width: 90%; /* Adjust width for small screens */
+            }
+        }
     </style>
 </head>
 <body>
-    <h3 style="text-align: center; color: cornflowerblue; text-decoration: wavy;"> Login page</h3><fieldset>
-    <form><table>
-        <tr>
-            <td>Username: </td>
-            <td><input type="text" required></td>
-        </tr>
-        <tr>
-            <td>Password: </td>
-            <td><input type="password" required></td>
-
-        </tr> </table>
-        
+    <h3 style="text-align: center; color: cornflowerblue; text-decoration: wavy;">Login page</h3>
+    <fieldset>
+        <form>
+            <table>
+                <tr>
+                    <td>Username:</td>
+                    <td><input type="text" required></td>
+                </tr>
+                <tr>
+                    <td>Password:</td>
+                    <td><input type="password" required></td>
+                </tr>
+            </table>
+            
             <input type="checkbox" id="terms" required>
-          <label for="terms"> i have read all terms and conditons</label>
-        
- 
- <input type="submit"  value="Login"></form> 
-</fieldset>
-<h3 style="color: white;">Not Registered yet? <a href="registration.html" style="color: red;">Register Now</a> </h3>
+            <label for="terms">I have read all terms and conditions</label>
+            
+            <br><br>
+            <input type="submit" value="Login">
+        </form>
+    </fieldset>
+    <h3 style="color: white; margin-left: 40%;">Not Registered yet? <a href="registration.html" style="color: red;">Register Now</a></h3>
 </body>
 </html>
