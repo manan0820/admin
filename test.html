@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User login</title>
+    <style>
+        body {
+            background-image: url("images/bridge.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        fieldset {
+            background-color: rgba(255, 255, 255, 0.5);
+            border: none;
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 500px;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                background-image: url("images/mountains.jpg");
+            }
+        }
+
+        h3 {
+            text-align: center;
+            color: cornflowerblue;
+            text-decoration: underline;
+        }
+
+        h3 a {
+            color: red;
+            text-decoration: none;
+        }
+
+        h3 a:hover {
+            text-decoration: underline;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="submit"],
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h3>Login page</h3>
+    <fieldset>
+        <form><table>
+          <tr><td>  <label for="username">Username:</label></td>
+            <td><input type="text" id="username" required></td></tr>
+          <tr> <td> <label for="password">Password:</label></td>
+           <td> <input type="password" id="password" required></td></tr>
+         <tr><td> <input type="checkbox" id="terms" required></td>
+           <td> <label for="terms">I have read all terms and conditions</label>
+            </td></tr>
+        </table>
+           
+    </fieldset>
+    <h3>Not Registered yet? <a href="registration.html">Register Now</a></h3>
+</body>
+</html>
