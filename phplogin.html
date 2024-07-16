@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        margin-top: 7%;
+        margin-left: 40%;
+        background-image: url("images/ferb.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        max-width: 100%;
+    } fieldset{
+            max-width: 50%;
+            background-color: rgba(241, 233, 112, 0.671);
+            margin-right: 550px;
+            box-shadow: 8px 8px 8px #FDD80F;
+        }
+</style>
+<body><fieldset><legend>Login</legend>
+    <form action="welcome.php" method="post">
+<table>
+    <tr>
+        <td><label>Username: </label></td>
+        <td><input type="text" name="nm"></td>
+    </tr>
+    <tr>
+        <td><label>Password: </label></td>
+        <td><input type="password" name="pw"></td>
+    </tr>
+</table>
+
+<input type="submit" style="margin-left: 15%; margin-top: 5px;">
+<h5> forget password? Don't worry <a href="forgetpass.html">Change now</a></h5>
+<h3>Go to <a href="phpreg.html">Registration</a></h3> 
+</form></fieldset></body>
+</html>
